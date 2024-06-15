@@ -1,0 +1,31 @@
+/* .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.3); 
+    width: 100%;
+    z-index: 1000; 
+    backdrop-filter: blur(30px); 
+    -webkit-backdrop-filter: blur(30px); 
+   
+} */
+
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(7, 16, 19, 0.1); 
+  backdrop-filter: blur(32px); 
+    -webkit-backdrop-filter: blur(32px); 
+}
+
+/* .container {
+  position: relative;
+} */
+
+/* .use-case-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: max-content;
+} */
