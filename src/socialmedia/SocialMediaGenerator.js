@@ -1,36 +1,32 @@
 import React from 'react'
 import Navbar from '../navbar/Navbar'
-import PromoVideo from './pages/PromoVideo'
+import FirstComp from './pages/FirstComp'
 import CompanyAnimation from '../aibulkvideo/pages/CompanyAnimation'
-import WhyCard from './pages/WhyCard'
-import DriveSales from './pages/DriveSales'
-import SaveTime from './pages/SaveTime'
-import BoostConversions from './pages/BoostConversions'
+import SocialMediaCard from './pages/SocialMediaCard'
+import BuildBrand from './pages/BuildBrand'
+import IncreaseGoals from './pages/IncreaseGoals'
+import BoostConversations from './pages/BoostConversations'
 import DiscoverMore from '../homepage/pages/DiscoverMore'
 import Faq from '../homepage/pages/Faq'
 import TrustedComp from '../homepage/pages/TrustedComp'
 import Footer from '../homepage/pages/Footer'
-import Video from '../customcomponent/Video'
 
-const AiPromoVideo = () => {
+const SocialMediaGenerator = () => {
   return (
     <div>
       <Navbar />
-      <Video />
-      <PromoVideo />
-     
+      <FirstComp />
       <CompanyAnimation />
-
-      <WhyCard />
-      <DriveSales />
-      <SaveTime />
-      <BoostConversions />
+      <SocialMediaCard />
+      <BuildBrand />
+      <IncreaseGoals />
+      <BoostConversations />
       <DiscoverMore />
       <Faq />
       <TrustedComp />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default AiPromoVideo;
+export default SocialMediaGenerator

@@ -2,20 +2,20 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className=" py-[96px]">
+    <div className=" sm:py-[96px] max-sm:py-[20px] ">
       <div className="container">
         <div className="pb-[20px]">
-          <p className="text-sm font-semibold font-worksans text-[#000000] ">
+          <p className="text-sm max-sm:text-center font-semibold font-worksans text-[#000000] ">
             About
           </p>
         </div>
         <div className="pb-[24px]">
-          <p className="font-semibold font-worksans text-[40px] text-[#000000] ">
+          <p className="font-semibold max-sm:text-center font-worksans text-[40px] text-[#000000] ">
             Shivacha.AI
           </p>
         </div>
         <div>
-          <p className='font-worksans font-medium text-base text-[#565656]'>
+          <p className="font-worksans max-sm:text-center font-medium text-base text-[#565656]">
             This Website provides users with access to bulk videos sourced from
             extensive human-created premium libraries and AI-generated assets,
             encompassing stock videos, animations, background music, properties,

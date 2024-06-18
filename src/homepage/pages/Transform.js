@@ -5,7 +5,7 @@ const Transform = () => {
   return (
     <div className="py-[96px]">
       <div className="container">
-        <div className="grid grid-cols-2 gap-x-6">
+        <div className="grid sm:grid-cols-2 max-sm:grid-cols-1 gap-x-6">
           <div>
             <img
               src={process.env.PUBLIC_URL + "./image/homepage/yourscript.png"}

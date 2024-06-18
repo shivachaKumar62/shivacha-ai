@@ -6,7 +6,7 @@ const TrustedComp = () => {
     <div className="bg-[#212121] py-[96px] relative">
       <div className="container">
         <div className="flex justify-center flex-col items-center w-[60%] mx-auto ">
-          <p className="text-white text-center font-worksans leading-[80px] font-semibold text-[72px]">
+          <p className="text-white text-center font-worksans leading-[80px] font-semibold sm:text-[72px] max-sm:text-[24px]">
             Your trusted partner in Video{" "}
             <span className="text-[#0096FF]">AI Generator</span>
           </p>

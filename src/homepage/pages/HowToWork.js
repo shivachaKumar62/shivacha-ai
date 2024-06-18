@@ -2,9 +2,9 @@ import React from 'react'
 
 const HowToWork = () => {
   return (
-    <div className="py-[96px]">
+    <div className="sm:py-[96px] max-sm:py-[30px]">
       <div className="container">
-        <div className="grid grid-cols-2 gap-x-6">
+        <div className="grid sm:grid-cols-2 max-sm:grid-cols-1 gap-x-6">
           <div >
             <div className="pb-[20px]">
               <p className="font-worksans font-semibold text-sm text-[#000000]">
@@ -12,7 +12,7 @@ const HowToWork = () => {
               </p>
             </div>
             <div>
-              <h1 className="font-worksans  font-semibold text-[40px] text-[#000000]">
+              <h1 className="font-worksans  font-semibold max-sm:text-[32px] sm:text-[40px] text-[#000000]">
                 Input Content, Generate Video, Preview, Download
               </h1>
             </div>

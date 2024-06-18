@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="py-[96px]">
       <div className="container">
-        <div className="flex justify-between ">
+        <div className="flex sm:justify-between max-sm:flex-col max-sm:items-center max-sm:w-full ">
           <div className="flex flex-col max-w-[25%] ">
             <span className="font-worksans font-medium text-xl  mb-[16px]">
               Feature

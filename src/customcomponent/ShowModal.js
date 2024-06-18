@@ -3,19 +3,32 @@
 
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { RxCross2 } from "react-icons/rx";
 
 
-
-const ShowModal = ({ img, useCaseData }) => {
-  const navigate = useNavigate()
+const ShowModal = ({ img, useCaseData,  data,setActiveModal }) => {
+  const navigate = useNavigate();
+  const handleClos = () => {
+    setActiveModal((data) => !data)
+  }
   return (
     <div
-      className="bg-white  shadow-md rounded-2xl py-[24px] px-[24px] z-10 "
+      className="bg-white max-sm:w-full max-sm:overflow-auto max-sm:h-[75vh]  shadow-md rounded-2xl  z-10 "
       style={{
         border: "6px solid rgba(0,0,0,0.1)",
       }}
     >
-      <div className="flex justify-between flex-wrap gap-x-[45px]">
+      <div className="flex max-sm:visible sm:hidden justify-between h-[50px] max-sm:px-3 items-center border-b-2  ">
+        <span className="font-worksans font-semibold text-lg">{data}</span>
+        <span
+          className="bg-blue-500 rounded-full px-1 py-1 cursor-pointer"
+          onClick={handleClos}
+
+        >
+          <RxCross2 className="text-xl text-white" />
+        </span>
+      </div>
+      <div className="flex justify-between flex-wrap gap-x-[45px] max-sm:py-[10px] max-sm:px-[10px] sm:py-[24px] sm:px-[24px]">
         {useCaseData?.map((item, index) => (
           <div
             key={index}
