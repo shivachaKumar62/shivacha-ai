@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
-        <Route exact path="/generate-bulk" element={<BulkVideo />} />
+        {/* <Route exact path="/generate-bulk" element={<BulkVideo />} />
         <Route exact path="/promo-bulk" element={<AiPromoVideo />} />
         <Route exact path="/video-meme" element={<VideMemeGenerator />} />
         <Route
@@ -23,7 +23,7 @@ function App() {
           element={<CorporateVideoGenerator />}
         />
         <Route exact path="/script-video" element={<ScriptVideoGenerator />} />
-        <Route exact path="/social-media" element={<SocialMediaGenerator />} />
+        <Route exact path="/social-media" element={<SocialMediaGenerator />} /> */}
       </Routes>
     </BrowserRouter>
   );
