@@ -44,39 +44,7 @@ const Faq = () => {
     setOpenQuestionId(openQuestionId === id ? null : id);
   };
   return (
-    // <div className="py-[96px]">
-    //   <div className="container">
-    //     <div className="flex flex-col justify-center items-center">
-    //       <div>
-    //         <p className="font-worksans font-semibold text-sm text-[#212121]">
-    //           FAQ
-    //         </p>
-    //       </div>
-    //       <div className="pt-[20px] pb-[48px]">
-    //         <p className="font-worksans font-semibold text-[40px] text-[#212121]">
-    //           Eager for additional information?
-    //         </p>
-    //       </div>
-    //       <div className="flex flex-col justify-center items-center">
-    //         {data.map(({ id, question, answer }) => (
-    //           <div key={id} className="border border-gray-200 mb-4">
-    //             <button
-    //               className=" text-left font-worksans font-medium text-lg text-[#212121] py-4 focus:outline-none"
-    //               onClick={() => toggleAnswer(id)}
-    //             >
-    //               {question}
-    //             </button>
-    //             {openQuestionId === id && (
-    //               <div className="w-[50%] mx-auto pb-4 flex justify-center items-center text-[#565656]">
-    //                 <span className="text-center">{ answer }</span>
-    //               </div>
-    //             )}
-    //           </div>
-    //         ))}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
+ 
     <div className="min-h-screen flex items-center justify-center py-12">
       <div className="container ">
         <div className="flex flex-col  items-center ">
@@ -85,12 +53,12 @@ const Faq = () => {
               FAQ
             </p>
           </div>
-          <div className="pt-[20px] pb-[48px]">
-            <p className="font-worksans font-semibold text-[40px] text-[#212121]">
+          <div className="pt-[20px] sm:pb-[48px] max-sm:pb-[20px]">
+            <p className="font-worksans font-semibold max-sm:text-[32px] max-sm:text-center sm:text-[40px] text-[#212121]">
               Eager for additional information?
             </p>
           </div>
-          <div className="w-full max-w-[80%] mx-auto">
+          <div className="w-full sm:max-w-[80%] max-sm:w-full mx-auto">
             {data.map(({ id, question, answer }) => (
               <div key={id} className="border-2 border-gray-200 mb-[24px] px-4 rounded-md shadow-md">
                 <div
@@ -98,7 +66,7 @@ const Faq = () => {
                   onClick={() => toggleAnswer(id)}
                 >
                   <button
-                    className="w-full text-left font-worksans font-medium text-lg text-[#212121] py-4 focus:outline-none"
+                    className="w-full text-left font-worksans font-medium max-sm:text-base sm:text-lg text-[#212121] py-4 focus:outline-none"
                     // onClick={() => toggleAnswer(id)}
                   >
                     {question}

@@ -3,9 +3,9 @@ import Button from "../../customcomponent/Button";
 
 const LongForm = () => {
   return (
-    <div className="py-[96px]">
+    <div className="sm:py-[96px] max-sm:py-[20px]">
       <div className="container">
-        <div className="grid grid-cols-2 gap-x-6">
+        <div className="grid sm:grid-cols-2 max-sm:grid-cols-1 gap-x-6">
           <div>
             <img
               src={
@@ -14,8 +14,8 @@ const LongForm = () => {
             />
           </div>
           <div>
-            <div>
-              <p className="text-[#212121] font-semibold font-worksans text-[40px]">
+            <div className="max-sm:pt-[32px]">
+              <p className="text-[#212121] font-semibold font-worksans max-sm:text-[32px] sm:text-[40px]">
                 Convert Long-Form Videos into Engaging Bulk Campain Clips for
                 Social Media
               </p>

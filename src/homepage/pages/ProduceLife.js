@@ -3,12 +3,12 @@ import Button from "../../customcomponent/Button";
 
 const ProduceLife = () => {
   return (
-    <div className="py-[96px]">
+    <div className="sm:py-[96px] max-sm:py-[20px]">
       <div className="container">
-        <div className="grid grid-cols-2 gap-x-6">
-          <div>
-            <div>
-              <p className="text-[#212121] font-semibold font-worksans text-[40px]">
+        <div className="grid sm:grid-cols-2 max-sm:grid-cols-1 gap-x-6">
+          <div className="sm:order-1 max-sm:order-2">
+            <div className="max-sm:pt-[32px]">
+              <p className="text-[#212121] font-semibold font-worksans max-sm:text-[32px] sm:ext-[40px]">
                 Produce lifelike voiceovers effortlessly using Shivacha's
                 AI-powered tools.
               </p>
@@ -42,7 +42,7 @@ const ProduceLife = () => {
               />
             </div>
           </div>
-          <div>
+          <div className="sm:order-2 max-sm:order-1">
             <img
               src={
                 process.env.PUBLIC_URL + "./image/homepage/producelifelike.png"

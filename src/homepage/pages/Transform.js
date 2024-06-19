@@ -3,7 +3,7 @@ import Button from '../../customcomponent/Button';
 
 const Transform = () => {
   return (
-    <div className="py-[96px]">
+    <div className="sm:py-[96px] max-sm:py-[20px]">
       <div className="container">
         <div className="grid sm:grid-cols-2 max-sm:grid-cols-1 gap-x-6">
           <div>
@@ -12,12 +12,12 @@ const Transform = () => {
             />
           </div>
           <div>
-            <div>
-              <p className="text-[#212121] font-semibold font-worksans text-[40px]">
+            <div className='max-sm:pt-[30px] sm:pt-[0p]'>
+              <p className="text-[#212121] font-semibold font-worksans sm:text-[40px] max-sm:text-[32px]">
                 Transform Your Script into a Professional Video in Just Minutes
               </p>
             </div>
-            <div className='pt-[24px] pb-[36px]'>
+            <div className="pt-[24px] pb-[36px]">
               <p className="text-[#565656] font-medium font-worksans text-lg">
                 Craft polished videos effortlessly with lifelike AI voices,
                 perfectly synced footage, and fitting music, all from your
@@ -33,7 +33,14 @@ const Transform = () => {
               </p>
             </div>
             <div>
-                <Button text="Get Started For Trial" bg="white" textColor="blue-500" iconBg="blue-500" iconText="white" borderPart="border" />
+              <Button
+                text="Get Started For Trial"
+                bg="white"
+                textColor="blue-500"
+                iconBg="blue-500"
+                iconText="white"
+                borderPart="border"
+              />
             </div>
           </div>
         </div>

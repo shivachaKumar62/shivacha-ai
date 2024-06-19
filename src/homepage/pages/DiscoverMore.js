@@ -16,32 +16,32 @@ const DiscoverMore = () => {
       { id: 11, title: "Remove Audio From Video" },
     ];
   return (
-    <div className="py-[96px] bg-[#212121]">
+    <div className="sm:py-[96px] max-sm:py-[20px] bg-[#212121]">
       <div className="container ">
-        <div className="flex ">
-          <div className="max-w-[40%]">
+        <div className="flex max-sm:flex-col">
+          <div className="sm:max-w-[40%] max-sm:w-full">
             <div className="pb-[20px]">
               <p className="text-white text-sm font-semibold font-worksans">
                 Discover More
               </p>
             </div>
             <div className="pb-[36px]  ">
-              <p className="text-white  text-[40px] font-worksans font-semibold">
-                It's not just text to video; it's a text-to-any-type-of-video
+              <p className="text-white  max-sm:text-[30px] sm:text-[40px] font-worksans font-semibold">
+                It's not just text to video it's a text-to-any-type-of-video
                 generator.
               </p>
             </div>
             <div className="flex items-center gap-4 flex-wrap">
               {data &&
                 data.map((item, ind) => (
-                  <span className="px-4 py-1 bg-white rounded-full font-semibold font-worksans text-base text-[#212121]">
+                  <span className="px-4 py-1 bg-white rounded-full font-semibold font-worksans max-sm:text-[12px] sm:text-base text-[#212121]">
                     {item?.title}
                   </span>
                 ))}
             </div>
             <div>
               <div className="w-full mt-[36px]  flex  justify-between items-center bg-white rounded-full h-[64px] px-4">
-                <span className="font-semibold font-worksans text-base text-[#212121]">
+                <span className="sm:font-semibold max-sm:font-medium font-worksans text-base text-[#212121]">
                   Explore More
                 </span>
                 <Button
@@ -55,7 +55,7 @@ const DiscoverMore = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-[60%]">
+          <div className="sm:max-w-[60%] max-sm:w-full max-sm:pt-[32px]">
             <img
               src={process.env.PUBLIC_URL + "./image/homepage/aifeature.png"}
             />

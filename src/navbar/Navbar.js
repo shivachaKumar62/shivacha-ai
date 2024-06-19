@@ -4,6 +4,7 @@
 
 import React, { useState, useEffect,useRef } from "react";
 import { FaAngleDown } from "react-icons/fa6";
+import { MdArrowOutward } from "react-icons/md";
 import Button from "../customcomponent/Button";
 import "../css/navbar.css";
 import ShowModal from "../customcomponent/ShowModal";
@@ -16,12 +17,13 @@ const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [activeModal, setActiveModal] = useState(null);
   const [responsiveNav,setResponsiveNav] = useState(false)
-  const [isVisible, setIsVisible] = useState(true);
+
   const divRef = useRef(null);
   const modalRef = useRef(null);
   
   const handleClick = () => {
 setResponsiveNav((data) => !data)
+
   }
   const handleClose = () => {
     setResponsiveNav((data) => !data)
@@ -155,7 +157,10 @@ useEffect(() => {
   }, []);
 
   return (
-    <div className={` ${isSticky ? "sticky-header" : "bg-white"} w-full `} ref={divRef}>
+    <div
+      className={` ${isSticky ? "sticky-header" : "bg-white"} w-full `}
+      ref={divRef}
+    >
       <div className="container relative">
         <div className="max-sm:h-[30px] sm:h-[96px] flex justify-between items-center ">
           <div>
@@ -175,7 +180,7 @@ useEffect(() => {
           {responsiveNav && (
             <>
               <div className="absolute top-[70px] left-0 w-full bg-white z-10">
-                <div className="flex justify-end px-4 py-2  ">
+                <div className="flex hover:bg-blue-590 justify-end px-4 py-2  ">
                   <span
                     className="bg-blue-500 rounded-full px-1 py-1 cursor-pointer"
                     onClick={handleClose}
@@ -184,72 +189,78 @@ useEffect(() => {
                   </span>
                 </div>
 
-                <div className="flex gap-4 py-4 flex-col items-center">
+                <div className="flex gap-4 py-4 flex-col justify-start pl-6">
                   <p
-                    className="font-worksans cursor-pointer text-base font-medium text-[#000000]"
+                    className={`font-worksans cursor-pointer text-base font-medium text-[#000000]  `}
                     onClick={() => navigate("/")}
                   >
                     Home
                   </p>
                   <div
-                    className="flex items-center gap-1 cursor-pointer relative"
+                    className="flex items-center gap-1 cursor-pointer relative   "
                     onMouseEnter={() => setActiveModal("useCase")}
-                    
                   >
                     <p className="font-worksans text-base font-medium text-[#000000]">
                       Use Case
                     </p>
-                    <span>
+                    <span className="absolute left-[22%]">
                       <FaAngleDown />
                     </span>
                   </div>
                   <div
-                    className="flex items-center gap-1 cursor-pointer"
+                    className="flex items-center gap-1 cursor-pointer relative"
                     onMouseEnter={() => setActiveModal("Feature")}
-                    
                   >
                     <p className="font-worksans text-base font-medium text-[#000000]">
                       Feature
                     </p>
-                    <span>
+                    <span className="absolute left-[22%]">
                       <FaAngleDown />
                     </span>
                   </div>
                   <div
-                    className="flex items-center gap-1 cursor-pointer"
+                    className="flex items-center gap-1 cursor-pointer relative"
                     onMouseEnter={() => setActiveModal("business")}
-                    
                   >
                     <p className="font-worksans text-base font-medium text-[#000000]">
                       Business
                     </p>
-                    <span>
+                    <span className="absolute left-[22%]">
                       <FaAngleDown />
                     </span>
                   </div>
                   <div
-                    className="flex items-center gap-1 cursor-pointer"
+                    className="flex items-center gap-1 cursor-pointer relative"
                     onMouseEnter={() => setActiveModal("Company")}
                     onMouseLeave={() => setActiveModal(null)}
                   >
                     <p className="font-worksans text-base font-medium text-[#000000]">
                       Company
                     </p>
-                    <span>
+                    <span className="absolute left-[22%]">
                       <FaAngleDown />
                     </span>
                   </div>
                   <p className="font-worksans cursor-pointer text-base font-medium text-[#000000]">
                     Pricing
                   </p>
-                  <Button
-                    text="Get Start"
-                    bg="blue-500"
-                    textColor="white"
-                    iconBg="white"
-                    iconText="blue-500"
-                    borderPart=""
-                  />
+                </div>
+                <div className="flex justify-center items-center pb-5 ">
+                  
+                  <button
+                    className={`flex items-center gap-3 w-[50%]  border-blue-500 cursor-pointer bg-blue-500 px-4 py-3 rounded-full  justify-center`}
+                  >
+                    <span
+                      className={`text-white font-worksans max-sm:text-[14px] sm:text-base font-medium`}
+                    >
+                      Get Start
+                    </span>
+                    <span
+                      className={`text-blue-500 bg-white rounded-full px-1 py-1`}
+                    >
+                      <MdArrowOutward />
+                    </span>
+                  </button>
                 </div>
               </div>
             </>
@@ -266,7 +277,6 @@ useEffect(() => {
             <div
               className="flex items-center gap-1 cursor-pointer relative"
               onMouseEnter={() => setActiveModal("useCase")}
-              
             >
               <p className="font-worksans text-base font-medium text-[#000000]">
                 Use Case
@@ -278,7 +288,6 @@ useEffect(() => {
             <div
               className="flex items-center gap-1 cursor-pointer"
               onMouseEnter={() => setActiveModal("Feature")}
-              
             >
               <p className="font-worksans text-base font-medium text-[#000000]">
                 Feature
@@ -290,7 +299,6 @@ useEffect(() => {
             <div
               className="flex items-center gap-1 cursor-pointer"
               onMouseEnter={() => setActiveModal("business")}
-              
             >
               <p className="font-worksans text-base font-medium text-[#000000]">
                 Business
@@ -302,7 +310,6 @@ useEffect(() => {
             <div
               className="flex items-center gap-1 cursor-pointer"
               onMouseEnter={() => setActiveModal("Company")}
-             
             >
               <p className="font-worksans text-base font-medium text-[#000000]">
                 Company
@@ -368,35 +375,35 @@ useEffect(() => {
           </div>
         )} */}
         {activeModal && (
-        <div
-          className="absolute max-sm:w-full max-sm:left-0 max-sm:top-[70px] sm:top-full sm:left-[20%] z-10 sm:w-[70%] mt-0 "
-          data-aos="fade-up"
-          ref={modalRef}
-        >
-          {activeModal === "useCase" && (
-            <ShowModal
-              img="usecase"
-              data="Use Cases"
-              setActiveModal={setActiveModal}
-              useCaseData={useCaseData}
-            />
-          )}
-          {activeModal === "Company" && (
-            <ShowModal
-              img="usecase"
-              useCaseData={companyData}
-              data="Company"
-              setActiveModal={setActiveModal}
-            />
-          )}
-          {activeModal === "Feature" && (
-            <FeatureData data="Feature" setActiveModal={setActiveModal} />
-          )}
-          {activeModal === "business" && (
-            <BusinessData data="Business" setActiveModal={setActiveModal} />
-          )}
-        </div>
-      )}
+          <div
+            className="absolute max-sm:w-full max-sm:left-0 max-sm:top-[70px] sm:top-full sm:left-[20%] z-10 sm:w-[70%] mt-0 "
+            data-aos="fade-up"
+            ref={modalRef}
+          >
+            {activeModal === "useCase" && (
+              <ShowModal
+                img="usecase"
+                data="Use Cases"
+                setActiveModal={setActiveModal}
+                useCaseData={useCaseData}
+              />
+            )}
+            {activeModal === "Company" && (
+              <ShowModal
+                img="usecase"
+                useCaseData={companyData}
+                data="Company"
+                setActiveModal={setActiveModal}
+              />
+            )}
+            {activeModal === "Feature" && (
+              <FeatureData data="Feature" setActiveModal={setActiveModal} />
+            )}
+            {activeModal === "business" && (
+              <BusinessData data="Business" setActiveModal={setActiveModal} />
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

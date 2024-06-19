@@ -12,7 +12,7 @@ const BulkVideo = () => {
      });
    }, []);
   return (
-    <div className="sm:py-[96px] max-sm:py-[30px]">
+    <div className="sm:py-[96px] max-sm:py-[10px]">
       <div className="container">
         <div className="flex justify-between items-center   ">
           <div className="col-span-10 " data-aos="fade-right">
@@ -51,19 +51,19 @@ const BulkVideo = () => {
             </div>
           </div>
         </div>
-        <div className="grid  max-sm:grid-cols-1 sm:grid-cols-2 pt-[66px] ">
+        <div className="grid  max-sm:grid-cols-1 sm:grid-cols-2   max-sm:pt-[24px] sm:pt-[66px]  ">
           <div data-aos="fade-up">
             <img
               src={process.env.PUBLIC_URL + "./image/homepage/Group 52.png"}
-              className="h-[349px]"
+              className="max-sm:h-auto sm:h-auto max-sm:object-contain rounded-md"
             />
           </div>
-          <div data-aos="fade-down " className="max-sm:mt-[20px] ">
+          <div data-aos="fade-down col-end " className="max-sm:mt-[32px] ">
             <img
               src={process.env.PUBLIC_URL + "./image/homepage/Group 53.png"}
               className="h-[72px]"
             />
-            <p className="sm:pt-[48px] max-sm:pt-[20px] pb-[36px] w-[70%] ">
+            <p className="sm:pt-[48px] max-sm:pt-[24px] pb-[36px] max-sm:w-full sm:w-[70%] sm:text-justify ">
               Transform your content creation with our AI-driven Bulk AI Video
               generator, crafting multiple engaging videos in minutes.
             </p>

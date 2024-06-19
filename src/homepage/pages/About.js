@@ -2,14 +2,14 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className=" sm:py-[96px] max-sm:py-[20px] ">
+    <div className=" sm:py-[96px] max-sm:py-[10px] ">
       <div className="container">
-        <div className="pb-[20px]">
+        <div className="sm:pb-[20px] max-sm:pb-[0px]">
           <p className="text-sm max-sm:text-center font-semibold font-worksans text-[#000000] ">
             About
           </p>
         </div>
-        <div className="pb-[24px]">
+        <div className="sm:pb-[24px] max-sm:pb-[10px]">
           <p className="font-semibold max-sm:text-center font-worksans text-[40px] text-[#000000] ">
             Shivacha.AI
           </p>

@@ -6,10 +6,10 @@ import { BsTwitterX } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="py-[96px]">
+    <div className="sm:py-[96px] max-sm:py-[20px]">
       <div className="container">
         <div className="flex sm:justify-between max-sm:flex-col max-sm:items-center max-sm:w-full ">
-          <div className="flex flex-col max-w-[25%] ">
+          <div className="flex flex-col sm:sm:max-w-[25%] max-sm:w-full max-sm:pb-[20px]">
             <span className="font-worksans font-medium text-xl  mb-[16px]">
               Feature
             </span>
@@ -32,7 +32,7 @@ const Footer = () => {
               Personalized Video Maker
             </NavLink>
           </div>
-          <div className="flex flex-col max-w-[25%] ">
+          <div className="flex flex-col sm:max-w-[25%]  max-sm:w-full max-sm:pb-[20px]">
             <span className="font-worksans font-medium text-xl  mb-[16px]">
               Resource
             </span>
@@ -49,7 +49,7 @@ const Footer = () => {
               Help Center
             </NavLink>
           </div>
-          <div className="flex flex-col max-w-[25%]">
+          <div className="flex flex-col sm:max-w-[25%]  max-sm:w-full max-sm:pb-[20px]">
             <span className="font-worksans font-medium text-xl  mb-[16px]">
               Company
             </span>
@@ -72,7 +72,7 @@ const Footer = () => {
               Contact Us
             </NavLink>
           </div>
-          <div className="flex flex-col max-w-[25%]">
+          <div className="flex flex-col sm:max-w-[25%]  max-sm:w-full">
             <div className="  mb-[16px]">
               <img
                 src={process.env.PUBLIC_URL + "./image/navbar/nav-logo.png"}

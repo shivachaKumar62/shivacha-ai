@@ -1,13 +1,13 @@
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
-const Button = ({borderPart, text, textColor ,bg,iconBg,iconText}) => {
+const Button = ({borderPart, text, textColor ,bg,iconBg,iconText,widt}) => {
   return (
     <div>
       <button
-        className={`flex items-center gap-3 ${borderPart} border-blue-500 cursor-pointer bg-${bg} px-4 py-3 rounded-full`}
+        className={`flex items-center gap-3 ${borderPart} border-blue-500 cursor-pointer bg-${bg} px-4 py-3 rounded-full max-sm:w-[${widt}%] justify-center`}
       >
         <span
-          className={`text-${textColor} font-worksans text-base font-medium`}
+          className={`text-${textColor} font-worksans max-sm:text-[14px] sm:text-base font-medium`}
         >
           {text}
         </span>

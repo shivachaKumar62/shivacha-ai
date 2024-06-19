@@ -29,7 +29,7 @@ const Homepage = () => {
      <LongForm />
      <ProduceLife />
      <DiscoverMore />
-     <DiscoverMoreOne />
+     {/* <DiscoverMoreOne /> */}
      <Faq />
      <TrustedComp />
      <Footer />
