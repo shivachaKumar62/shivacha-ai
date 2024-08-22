@@ -19,11 +19,16 @@ const TrustedComp = () => {
           <div className="pt-[36px]">
             <Button
               text="Get Started For Trial"
-              bg="blue-500"
+              bg="[#47BBFF]"
+              hoverBg="[#0096FF]"
               textColor="white"
               iconBg="white"
               iconText="blue-500"
               borderPart=""
+              path="/login"
+              textHover="white"
+              iconTextHover="[#0096FF]"
+              iconbgHover="white"
             />
           </div>
           <div>

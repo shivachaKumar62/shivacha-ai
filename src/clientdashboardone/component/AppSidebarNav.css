@@ -1,0 +1,191 @@
+.nav-icon-bullet {
+  display: inline-block;
+  /* width: 8px;
+  height: 8px; */
+  background-color: currentColor;
+  border-radius: 50%;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+   z-index: 999;
+  text-decoration: none;
+  padding: 12px;
+ border-radius: 10px;
+}
+.subitem{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 12px;
+ border-radius: 10px;
+
+}
+
+
+.nav-link:hover {
+ background: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9);
+ color:white;
+ z-index: 1;
+ 
+}
+.nav-link.active {
+ background: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9);
+ color:white
+ 
+}
+.nav-icon{
+    /* background-color: white !important; */
+    display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 2px;
+ border-radius: 10px;
+ 
+
+}
+.nav-icon .svg-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .nav-icon:hover{
+    background: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9);
+ color:white
+} */
+
+.svg-icon{
+    fill:black;
+    
+
+    
+}
+.svg-icon:hover  {
+  fill: #fff; 
+}
+
+.svg-icon {
+  fill: currentColor; /* This makes the SVG use the current text color */
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
+
+::-webkit-scrollbar-track {
+  
+  /* background: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9); */
+  background: #F3F3F3;
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Target the scrollbar itself */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar for horizontal scrollbars */
+}
+
+/* Target the scrollbar thumb (the part that you can drag) */
+::-webkit-scrollbar-thumb {
+  /* background-color: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9);; Change this to your desired thumb color */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  border: 8px solid #D6D6D6; 
+}
+
+/* Optional: Target the scrollbar corner (where two scrollbars meet) */
+::-webkit-scrollbar-corner {
+  /* background: #E8E8E8; Change this to your desired corner color */
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+  width: 100%;
+  padding:0px 24px; 
+  background:#E8E8E8
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+}
+.sticky-headers {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 0px; 
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+}
+
+
+
+
+
+
+
+
+/* AppSidebarNav.css */
+
+.app-sidebar-nav {
+  padding: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: padding 0.3s, width 0.3s;
+}
+
+.nav-item.collapsed {
+  padding: 10px 10px;
+}
+
+.nav-item.expanded {
+  padding: 10px 20px;
+}
+
+.nav-item-indent {
+  padding-left: 20px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.nav-name {
+  flex-grow: 1;
+}
+
+.nav-group {
+  margin-bottom: 10px;
+}
+
+.nav-group-items {
+  padding-left: 20px;
+}
+
+.nav-icon-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+
+.sidebar-popover .ant-popover-inner {
+  background-color: #f0f0f0; /* Example background color */
+}

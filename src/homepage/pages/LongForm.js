@@ -8,15 +8,13 @@ const LongForm = () => {
         <div className="grid sm:grid-cols-2 max-sm:grid-cols-1 gap-x-6">
           <div>
             <img
-              src={
-                process.env.PUBLIC_URL + "./image/homepage/longformvideos.png"
-              }
+              src={process.env.PUBLIC_URL + "./image/homepage/campaign.png"}
             />
           </div>
           <div>
             <div className="max-sm:pt-[32px]">
               <p className="text-[#212121] font-semibold font-worksans max-sm:text-[32px] sm:text-[40px]">
-                Convert Long-Form Videos into Engaging Bulk Campain Clips for
+                Convert Long-Form Videos into Engaging Bulk Campaign Clips for
                 Social Media
               </p>
             </div>
@@ -45,9 +43,13 @@ const LongForm = () => {
               <Button
                 text="Get Started For Trial"
                 bg="white"
+                hoverBg="[#0096FF]"
                 textColor="blue-500"
+                textHover="white"
                 iconBg="blue-500"
                 iconText="white"
+                iconTextHover="[#0096FF]"
+                iconbgHover="white"
                 borderPart="border"
               />
             </div>

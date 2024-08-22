@@ -1,0 +1,123 @@
+.nav-icon-bullet {
+  display: inline-block;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+   z-index: 999;
+  text-decoration: none;
+  padding: 12px;
+ border-radius: 10px;
+}
+.subitem{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 12px;
+ border-radius: 10px;
+
+}
+
+
+.nav-link:hover {
+ background: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9);
+ transition: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9) 0.7s ease-in-out;
+ color:white;
+ z-index: 1;
+ 
+ 
+}
+.nav-link.active {
+ background: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9);
+ color:white;
+
+}
+.nav-icon{
+    /* background-color: white !important; */
+    display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 2px;
+ border-radius: 10px;
+
+
+}
+.nav-icon .svg-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .nav-icon:hover{
+    background: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9);
+ color:white
+} */
+
+.svg-icon{
+    fill:black;
+    
+
+    
+}
+.svg-icon:hover  {
+  fill: #fff; 
+}
+
+.svg-icon {
+  fill: currentColor; /* This makes the SVG use the current text color */
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
+
+::-webkit-scrollbar-track {
+  
+  /* background: linear-gradient(to right, #0096FF, #8E54E9, #8E54E9); */
+  background: #F3F3F3;
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Target the scrollbar itself */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar for horizontal scrollbars */
+}
+
+/* Target the scrollbar thumb (the part that you can drag) */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px; 
+  border: 8px solid #D6D6D6; 
+}
+
+
+::-webkit-scrollbar-corner {
+  /* background: #E8E8E8; Change this to your desired corner color */
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding:0px 24px; 
+  background:#E8E8E8
+  
+}
+.sticky-headers {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  width: 100%;
+  padding: 16px 10px; 
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+}
+.nav-link-content{
+  display: flex;
+  align-items: center;
+}

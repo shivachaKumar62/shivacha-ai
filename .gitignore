@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/.package.json
 .pnp.js
 
 # testing
@@ -12,7 +13,7 @@
 /build
 
 # misc
-.DS_Store
+# .DS_Store
 .env.local
 .env.development.local
 .env.test.local

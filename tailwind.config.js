@@ -18,6 +18,10 @@ module.exports = {
       animation: {
         "slide-right-to-left": "slide-right-to-left 10s linear infinite",
       },
+      opacity: {
+        64: "0.64",
+      },
+      
     },
   },
   plugins: [],

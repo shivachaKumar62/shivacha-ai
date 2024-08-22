@@ -8,7 +8,7 @@ const ProduceLife = () => {
         <div className="grid sm:grid-cols-2 max-sm:grid-cols-1 gap-x-6">
           <div className="sm:order-1 max-sm:order-2">
             <div className="max-sm:pt-[32px]">
-              <p className="text-[#212121] font-semibold font-worksans max-sm:text-[32px] sm:ext-[40px]">
+              <p className="text-[#212121] font-semibold font-worksans max-sm:text-[32px] sm:text-[40px]">
                 Produce lifelike voiceovers effortlessly using Shivacha's
                 AI-powered tools.
               </p>
@@ -35,9 +35,13 @@ const ProduceLife = () => {
               <Button
                 text="Get Started For Trial"
                 bg="white"
+                hoverBg="[#0096FF]"
                 textColor="blue-500"
+                textHover="white"
                 iconBg="blue-500"
                 iconText="white"
+                iconTextHover="[#0096FF]"
+                iconbgHover="white"
                 borderPart="border"
               />
             </div>

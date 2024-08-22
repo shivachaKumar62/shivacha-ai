@@ -1,0 +1,51 @@
+// Here you can add other styles
+
+
+.simplebar-mask{
+  // border-right: 1px solid red;
+}
+.sidebar-nav .nav-link{
+    color: #1E1E1E;
+    opacity: 90%;
+    
+    background-color: #fff;
+    
+  }
+  .sidebar-nav .nav-link > svg{
+    // color: #1E1E1E;
+    opacity: 80%;
+    
+    
+  }
+  .sidebar-nav .nav-link.active {
+    color: blue; 
+    background-color: #fff;
+  }
+  
+ 
+  
+  .sidebar-nav .nav-link.active > span {
+    color: blue; 
+    // background-color: #fff;
+  }
+  .sidebar-nav .nav-link.active > svg {
+    color: blue; 
+    opacity: 100%;
+    // background-color: #fff;
+  }
+
+  .sidebar-nav .nav-link.hover > svg{
+    color:blue
+  }
+  // .sidebar-nav .nav-link.active > svg:hover {
+  //   color: blue; 
+  //   opacity: 100%;
+  //   // background-color: #fff;
+  // }
+     
+.sidebar-nav .nav-link:hover{
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+
+}
+

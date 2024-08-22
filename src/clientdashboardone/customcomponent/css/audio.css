@@ -1,0 +1,18 @@
+/* CSS file */
+.custom-audio-player {
+  background-color: #fff; /* Change this to your desired background color */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.play-pause-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Add more styles for other custom controls */

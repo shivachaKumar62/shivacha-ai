@@ -14,6 +14,7 @@ import DiscoverMoreOne from './pages/DiscoverMoreOne'
 import Faq from './pages/Faq'
 import TrustedComp from './pages/TrustedComp'
 import Footer from './pages/Footer'
+import SemiFooter from './pages/SemiFooter'
 
 const Homepage = () => {
   return (
@@ -33,6 +34,7 @@ const Homepage = () => {
      <Faq />
      <TrustedComp />
      <Footer />
+     <SemiFooter />
     </div>
   )
 }

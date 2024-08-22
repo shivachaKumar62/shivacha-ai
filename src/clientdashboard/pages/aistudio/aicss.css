@@ -1,0 +1,6 @@
+/* .select-box{
+    background-color: #f7f7f7 !important;
+} */
+.select-box .ant-select-selector{
+    background-color: #f7f7f7 !important;
+}

@@ -12,7 +12,7 @@ const Transform = () => {
             />
           </div>
           <div>
-            <div className='max-sm:pt-[30px] sm:pt-[0p]'>
+            <div className="max-sm:pt-[30px] sm:pt-[0p]">
               <p className="text-[#212121] font-semibold font-worksans sm:text-[40px] max-sm:text-[32px]">
                 Transform Your Script into a Professional Video in Just Minutes
               </p>
@@ -36,9 +36,13 @@ const Transform = () => {
               <Button
                 text="Get Started For Trial"
                 bg="white"
+                hoverBg="[#0096FF]"
                 textColor="blue-500"
+                textHover="white"
                 iconBg="blue-500"
                 iconText="white"
+                iconTextHover="[#0096FF]"
+                iconbgHover="white"
                 borderPart="border"
               />
             </div>

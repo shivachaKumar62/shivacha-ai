@@ -1,0 +1,100 @@
+
+.visualizer{
+  display: none;
+}
+
+
+
+
+/* import React, {  useEffect } from "react";
+import { ReactMic } from "react-mic";
+import { CiStop1 } from "react-icons/ci";
+import { MdRefresh } from "react-icons/md";
+import "./voiceclone.css"
+const VoiceRecorder = ({
+  setShowGif,
+  handleStop,
+  setIsRecording,
+  isRecording,
+  setAudioBlob,
+  timer,
+  setTimer
+}) => {
+  const intervalRef = React.useRef(null);
+
+  useEffect(() => {
+    if (isRecording) {
+      intervalRef.current = setInterval(() => {
+        setTimer((prevTimer) => prevTimer + 1);
+      }, 1000);
+    } else {
+      clearInterval(intervalRef.current);
+    }
+
+    return () => clearInterval(intervalRef.current);
+  }, [isRecording]);
+
+  
+
+  const stopRecording = () => {
+    setIsRecording(false);
+  };
+const handleRetake = () => {
+    setIsRecording(false);
+    setShowGif(false)
+}
+  const onStop = (recordedBlob) => {
+    setAudioBlob(recordedBlob);
+    handleStop(URL.createObjectURL(recordedBlob.blob));
+  };
+
+
+  return (
+    <div className="flex justify-between items-center w-full px-3">
+      
+      <ReactMic
+        record={isRecording}
+        
+        onStop={onStop}
+        
+      />
+
+      <div className="flex gap-2 items-center">
+        <div className="bg-[#E8E8E8] w-[14px] h-[14px] rounded-full "></div>
+        <p className="text-sm font-worksans font-semibold text-[#565656]">{`${Math.floor(
+          timer / 60
+        )
+          .toString()
+          .padStart(2, "0")}:${(timer % 60).toString().padStart(2, "0")}`}</p>
+      </div>
+      <img
+        src={process.env.PUBLIC_URL + "./image/clientimage/sound.gif"}
+        alt="gif"
+        className="w-[155px] h-[64px]"
+      />
+
+      <div className="flex gap-3">
+        <button
+          className="flex gap-2 text-[#565656] items-center font-worksans font-medium text-base bg-white hover:bg-[#E8E8E8] border  px-3 h-[44px] rounded-lg"
+          onClick={() => handleRetake()}
+        >
+          <span>
+            <MdRefresh />
+          </span>
+          Retake
+        </button>
+        <button
+          className="bg-[#FF4439] hover:bg-[#E7362C] rounded-lg text-white font-worksans font-medium text-base px-3 h-[42px] flex gap-2 items-center"
+          onClick={stopRecording}
+        >
+          <span className="bg-white block text-[12px]">
+            <CiStop1 />
+          </span>
+          Stop
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default VoiceRecorder; */

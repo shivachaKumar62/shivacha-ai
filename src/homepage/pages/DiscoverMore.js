@@ -34,7 +34,7 @@ const DiscoverMore = () => {
             <div className="flex items-center gap-4 flex-wrap">
               {data &&
                 data.map((item, ind) => (
-                  <span className="px-4 py-1 bg-white rounded-full font-semibold font-worksans max-sm:text-[12px] sm:text-base text-[#212121]">
+                  <span className="px-4 hover:bg-blue-500 hover:text-white cursor-pointer py-1 bg-white rounded-full font-semibold font-worksans max-sm:text-[12px] sm:text-base text-[#212121]">
                     {item?.title}
                   </span>
                 ))}
@@ -47,9 +47,13 @@ const DiscoverMore = () => {
                 <Button
                   text="Get Started For Trial"
                   bg="white"
+                  hoverBg="[#0096FF]"
                   textColor="blue-500"
+                  textHover="white"
                   iconBg="blue-500"
                   iconText="white"
+                  iconTextHover="[#0096FF]"
+                  iconbgHover="white"
                   borderPart="border"
                 />
               </div>
